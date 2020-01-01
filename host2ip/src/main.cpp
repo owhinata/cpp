@@ -43,4 +43,5 @@ int main(int argc, char* argv[]) {
   const auto ips(GetIpAddress(argv[1]));
   std::ostream_iterator<std::string> out(std::cout, "\n");
   std::copy(ips.begin(), ips.end(), out);
+  return 0;
 }
